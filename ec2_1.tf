@@ -3,5 +3,7 @@ resource "aws_instance" "ec2_1" {
   instance_type = "t2.micro"
   tags = {
     Name = "ec2_1"
+    ttl = 5
+    owner = "jek"
     }
 }
